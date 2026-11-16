@@ -20,4 +20,8 @@ function getBadgeService( int $code):array{
             break;
     }
 }
+function filtrerUrgences(array $patients){
+    $rouges=array_filter($patients,fn(array $pt) : bool =>$p["urgence"]==="ROUGE");
+    return $rouges;
+}
 ?>
