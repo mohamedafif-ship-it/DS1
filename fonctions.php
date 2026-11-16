@@ -7,4 +7,17 @@ function calculFacture(int $age ,float $tarifBase ){
     return $tot;
        
 }
+function getBadgeService( int $code):array{
+    switch($code){
+        case'cardiologue':
+            return [libelle => "CARDIO",classe =>"c"];
+            break;
+        case'dermatologue':
+            return [libelle => "DERMA",classe =>"d"];
+            break;
+        case'pediatrie':
+            return [libelle => "PED",classe =>"P"];
+            break;
+    }
+}
 ?>
